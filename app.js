@@ -17,6 +17,8 @@ const state = {
   selectedOption: null,
 };
 
+let deferredInstallPrompt = null;
+
 // ── Emojis flotantes ──────────────────────────────────────────
 const FLOAT_EMOJIS = ["📏","⚖️","🧴","📐","🔢","🌡️","📊","🔬","✏️","📌","🎯","⭐"];
 function spawnFloatingEmojis() {
@@ -389,9 +391,34 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("btnCloseModal").addEventListener("click", closeModal);
   document.getElementById("btnCloseModalBottom").addEventListener("click", closeModal);
 
+  // Botón instalar app (PWA)
+  const btnInstall = document.getElementById('btnInstall');
+  if (btnInstall) {
+    btnInstall.addEventListener('click', async () => {
+      if (!deferredInstallPrompt) return;
+      deferredInstallPrompt.prompt();
+      const choiceResult = await deferredInstallPrompt.userChoice;
+      if (choiceResult.outcome === 'accepted') {
+        console.log('PWA instalada');
+      } else {
+        console.log('PWA instalación cancelada');
+      }
+      deferredInstallPrompt = null;
+      btnInstall.classList.add('hidden');
+    });
+  }
+
   // Cerrar modal al hacer clic fuera
   document.getElementById("modalReview").addEventListener("click", e => {
     if (e.target === document.getElementById("modalReview")) closeModal();
+  });
+
+  window.addEventListener('beforeinstallprompt', event => {
+    event.preventDefault();
+    deferredInstallPrompt = event;
+    if (btnInstall) {
+      btnInstall.classList.remove('hidden');
+    }
   });
 
   loadData();
