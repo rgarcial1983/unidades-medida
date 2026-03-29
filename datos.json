@@ -1,0 +1,350 @@
+{
+  "tema": {
+    "titulo": "📏 Las Unidades de Medida",
+    "secciones": [
+      {
+        "icono": "📏",
+        "nombre": "Longitud",
+        "color": "#a8d8ea",
+        "descripcion": "Medimos lo largo que es algo.",
+        "unidades": [
+          { "nombre": "kilómetro", "simbolo": "km", "equivalencia": "1 km = 1.000 m", "ejemplo": "La distancia entre dos ciudades" },
+          { "nombre": "metro", "simbolo": "m", "equivalencia": "1 m = 100 cm", "ejemplo": "La altura de una puerta" },
+          { "nombre": "decímetro", "simbolo": "dm", "equivalencia": "1 dm = 10 cm", "ejemplo": "El ancho de tu mano" },
+          { "nombre": "centímetro", "simbolo": "cm", "equivalencia": "1 cm = 10 mm", "ejemplo": "El ancho de tu uña" },
+          { "nombre": "milímetro", "simbolo": "mm", "equivalencia": "el más pequeño", "ejemplo": "El grosor de una moneda" }
+        ],
+        "truco": "🧠 Truco: km → hm → dam → m → dm → cm → mm. ¡Cada paso divide o multiplica por 10!"
+      },
+      {
+        "icono": "⚖️",
+        "nombre": "Masa",
+        "color": "#ffd3b6",
+        "descripcion": "Medimos lo que pesa algo.",
+        "unidades": [
+          { "nombre": "tonelada", "simbolo": "t", "equivalencia": "1 t = 1.000 kg", "ejemplo": "Un elefante pesa unas 5 toneladas" },
+          { "nombre": "kilogramo", "simbolo": "kg", "equivalencia": "1 kg = 1.000 g", "ejemplo": "Un paquete de azúcar" },
+          { "nombre": "gramo", "simbolo": "g", "equivalencia": "1 g = 1.000 mg", "ejemplo": "Una moneda de 1 euro" },
+          { "nombre": "miligramo", "simbolo": "mg", "equivalencia": "el más pequeño", "ejemplo": "Un grano de sal" }
+        ],
+        "truco": "🧠 Truco: t → kg → g → mg. ¡La tonelada es enorme, el miligramo es minúsculo!"
+      },
+      {
+        "icono": "🧴",
+        "nombre": "Capacidad",
+        "color": "#b8f0c0",
+        "descripcion": "Medimos cuánto líquido cabe en algo.",
+        "unidades": [
+          { "nombre": "kilolitro", "simbolo": "kl", "equivalencia": "1 kl = 1.000 l", "ejemplo": "Un depósito de agua grande" },
+          { "nombre": "litro", "simbolo": "l", "equivalencia": "1 l = 10 dl", "ejemplo": "Una botella de agua" },
+          { "nombre": "decilitro", "simbolo": "dl", "equivalencia": "1 dl = 10 cl", "ejemplo": "Un vaso pequeño" },
+          { "nombre": "centilitro", "simbolo": "cl", "equivalencia": "1 cl = 10 ml", "ejemplo": "Una cucharada" },
+          { "nombre": "mililitro", "simbolo": "ml", "equivalencia": "el más pequeño", "ejemplo": "Una gota grande" }
+        ],
+        "truco": "🧠 Truco: kl → l → dl → cl → ml. ¡El litro es el rey de los líquidos!"
+      }
+    ]
+  },
+  "preguntas": [
+    {
+      "id": 1,
+      "tipo": "opcion_multiple",
+      "categoria": "longitud",
+      "pregunta": "¿Cuántos centímetros tiene 1 metro?",
+      "opciones": ["10 cm", "100 cm", "1.000 cm", "50 cm"],
+      "correcta": 1,
+      "explicacion": "¡Exacto! 1 metro = 100 centímetros. Piensa en una regla de 30 cm: necesitarías más de 3 para llegar a 1 metro.",
+      "emoji": "📏"
+    },
+    {
+      "id": 2,
+      "tipo": "opcion_multiple",
+      "categoria": "longitud",
+      "pregunta": "¿Qué unidad usarías para medir la distancia entre Madrid y Barcelona?",
+      "opciones": ["Milímetros", "Centímetros", "Metros", "Kilómetros"],
+      "correcta": 3,
+      "explicacion": "¡Muy bien! Para distancias grandes entre ciudades usamos kilómetros (km). Madrid-Barcelona son unos 620 km.",
+      "emoji": "🗺️"
+    },
+    {
+      "id": 3,
+      "tipo": "opcion_multiple",
+      "categoria": "longitud",
+      "pregunta": "¿Cuántos milímetros hay en 1 centímetro?",
+      "opciones": ["5 mm", "100 mm", "10 mm", "1.000 mm"],
+      "correcta": 2,
+      "explicacion": "¡Correcto! 1 centímetro = 10 milímetros. Mira una regla: cada centímetro tiene 10 rayas pequeñas (milímetros).",
+      "emoji": "🔍"
+    },
+    {
+      "id": 4,
+      "tipo": "opcion_multiple",
+      "categoria": "longitud",
+      "pregunta": "¿Qué es más grande: 1 metro o 1 decímetro?",
+      "opciones": ["1 decímetro", "Son iguales", "1 metro", "Depende del objeto"],
+      "correcta": 2,
+      "explicacion": "¡Genial! 1 metro es más grande. 1 metro = 10 decímetros. ¡El metro gana siempre!",
+      "emoji": "📐"
+    },
+    {
+      "id": 5,
+      "tipo": "opcion_multiple",
+      "categoria": "longitud",
+      "pregunta": "¿Cuántos metros tiene 1 kilómetro?",
+      "opciones": ["100 m", "500 m", "10 m", "1.000 m"],
+      "correcta": 3,
+      "explicacion": "¡Perfecto! 1 kilómetro = 1.000 metros. Si das 1.000 pasos grandes, ¡habrás caminado casi 1 kilómetro!",
+      "emoji": "🚶"
+    },
+    {
+      "id": 6,
+      "tipo": "opcion_multiple",
+      "categoria": "longitud",
+      "pregunta": "El símbolo del kilómetro es...",
+      "opciones": ["K", "kl", "km", "Km"],
+      "correcta": 2,
+      "explicacion": "¡Correcto! El símbolo es km (todo en minúsculas). Lo ves en las señales de tráfico y en los mapas.",
+      "emoji": "🛣️"
+    },
+    {
+      "id": 7,
+      "tipo": "opcion_multiple",
+      "categoria": "longitud",
+      "pregunta": "¿Qué medirías en centímetros?",
+      "opciones": ["La altura de una montaña", "El largo de un lápiz", "La distancia a la Luna", "El ancho de España"],
+      "correcta": 1,
+      "explicacion": "¡Muy bien! Un lápiz mide unos 17-19 cm. Los centímetros son perfectos para objetos pequeños que podemos tocar.",
+      "emoji": "✏️"
+    },
+    {
+      "id": 8,
+      "tipo": "opcion_multiple",
+      "categoria": "longitud",
+      "pregunta": "¿Cuántos decímetros tiene 1 metro?",
+      "opciones": ["100 dm", "1.000 dm", "10 dm", "1 dm"],
+      "correcta": 2,
+      "explicacion": "¡Exacto! 1 metro = 10 decímetros. El decímetro no se usa mucho en la vida diaria, pero es importante en matemáticas.",
+      "emoji": "📏"
+    },
+    {
+      "id": 9,
+      "tipo": "opcion_multiple",
+      "categoria": "masa",
+      "pregunta": "¿Cuántos gramos tiene 1 kilogramo?",
+      "opciones": ["10 g", "100 g", "1.000 g", "500 g"],
+      "correcta": 2,
+      "explicacion": "¡Perfecto! 1 kilogramo = 1.000 gramos. Un paquete de harina pesa 1 kg, que son 1.000 gramos.",
+      "emoji": "⚖️"
+    },
+    {
+      "id": 10,
+      "tipo": "opcion_multiple",
+      "categoria": "masa",
+      "pregunta": "¿Qué unidad usarías para pesar un elefante?",
+      "opciones": ["Gramos", "Miligramos", "Kilogramos", "Toneladas"],
+      "correcta": 3,
+      "explicacion": "¡Muy bien! Los elefantes son enormes y pesan varias toneladas. 1 tonelada = 1.000 kg. ¡Es muchísimo!",
+      "emoji": "🐘"
+    },
+    {
+      "id": 11,
+      "tipo": "opcion_multiple",
+      "categoria": "masa",
+      "pregunta": "¿Cuántos kilogramos tiene 1 tonelada?",
+      "opciones": ["100 kg", "500 kg", "10.000 kg", "1.000 kg"],
+      "correcta": 3,
+      "explicacion": "¡Correcto! 1 tonelada = 1.000 kilogramos. Un coche pequeño pesa casi 1 tonelada.",
+      "emoji": "🚗"
+    },
+    {
+      "id": 12,
+      "tipo": "opcion_multiple",
+      "categoria": "masa",
+      "pregunta": "¿Qué pesa aproximadamente 1 gramo?",
+      "opciones": ["Una manzana", "Una moneda de 1 euro", "Un libro", "Un elefante"],
+      "correcta": 1,
+      "explicacion": "¡Genial! Una moneda de 1 euro pesa aproximadamente 7,5 gramos. El gramo es muy pequeño.",
+      "emoji": "🪙"
+    },
+    {
+      "id": 13,
+      "tipo": "opcion_multiple",
+      "categoria": "masa",
+      "pregunta": "El símbolo del kilogramo es...",
+      "opciones": ["KG", "Kg", "kg", "k"],
+      "correcta": 2,
+      "explicacion": "¡Correcto! El símbolo es kg (todo en minúsculas). Lo ves en las básculas y en los envases de comida.",
+      "emoji": "🏷️"
+    },
+    {
+      "id": 14,
+      "tipo": "opcion_multiple",
+      "categoria": "masa",
+      "pregunta": "¿Qué unidad usarías para pesar una pastilla de medicamento?",
+      "opciones": ["Toneladas", "Kilogramos", "Miligramos", "Metros"],
+      "correcta": 2,
+      "explicacion": "¡Muy bien! Las pastillas son muy pequeñas y se miden en miligramos (mg). Por ejemplo, una pastilla puede tener 500 mg.",
+      "emoji": "💊"
+    },
+    {
+      "id": 15,
+      "tipo": "opcion_multiple",
+      "categoria": "masa",
+      "pregunta": "¿Qué es más pesado: 500g o 1 kg?",
+      "opciones": ["500 gramos", "Son iguales", "1 kilogramo", "No se puede saber"],
+      "correcta": 2,
+      "explicacion": "¡Exacto! 1 kg = 1.000 g, así que 1 kg es el doble de pesado que 500 g.",
+      "emoji": "⚖️"
+    },
+    {
+      "id": 16,
+      "tipo": "opcion_multiple",
+      "categoria": "masa",
+      "pregunta": "¿Cuántos miligramos tiene 1 gramo?",
+      "opciones": ["10 mg", "100 mg", "1.000 mg", "10.000 mg"],
+      "correcta": 2,
+      "explicacion": "¡Perfecto! 1 gramo = 1.000 miligramos. Los miligramos son minúsculos, se usan en medicina y química.",
+      "emoji": "🔬"
+    },
+    {
+      "id": 17,
+      "tipo": "opcion_multiple",
+      "categoria": "capacidad",
+      "pregunta": "¿Cuántos mililitros tiene 1 litro?",
+      "opciones": ["10 ml", "100 ml", "500 ml", "1.000 ml"],
+      "correcta": 3,
+      "explicacion": "¡Correcto! 1 litro = 1.000 mililitros. Una botella de agua pequeña tiene 500 ml, ¡la mitad de 1 litro!",
+      "emoji": "🧴"
+    },
+    {
+      "id": 18,
+      "tipo": "opcion_multiple",
+      "categoria": "capacidad",
+      "pregunta": "¿Qué unidad usarías para medir el agua de una piscina?",
+      "opciones": ["Mililitros", "Centilitros", "Litros", "Kilolitros"],
+      "correcta": 3,
+      "explicacion": "¡Muy bien! Las piscinas se miden en litros o kilolitros. Una piscina olímpica tiene 2.500.000 litros.",
+      "emoji": "🏊"
+    },
+    {
+      "id": 19,
+      "tipo": "opcion_multiple",
+      "categoria": "capacidad",
+      "pregunta": "¿Cuántos centilitros tiene 1 litro?",
+      "opciones": ["10 cl", "100 cl", "1.000 cl", "50 cl"],
+      "correcta": 1,
+      "explicacion": "¡Exacto! 1 litro = 100 centilitros. Los refrescos en lata suelen tener 33 cl.",
+      "emoji": "🥤"
+    },
+    {
+      "id": 20,
+      "tipo": "opcion_multiple",
+      "categoria": "capacidad",
+      "pregunta": "Una lata de refresco tiene 33 cl. ¿Cuánto es eso en mililitros?",
+      "opciones": ["33 ml", "3.300 ml", "330 ml", "3,3 ml"],
+      "correcta": 2,
+      "explicacion": "¡Genial! 1 cl = 10 ml, así que 33 cl = 330 ml. Muchas latas ponen las dos medidas en la etiqueta.",
+      "emoji": "🥫"
+    },
+    {
+      "id": 21,
+      "tipo": "opcion_multiple",
+      "categoria": "capacidad",
+      "pregunta": "El símbolo del litro es...",
+      "opciones": ["l", "lt", "Li", "Lit"],
+      "correcta": 2,
+      "explicacion": "¡Correcto! El símbolo es l (ele minúscula) o L (mayúscula).",
+      "emoji": "🏷️"
+    },
+    {
+      "id": 22,
+      "tipo": "opcion_multiple",
+      "categoria": "capacidad",
+      "pregunta": "¿Qué es más: 1 litro o 1 decilitro?",
+      "opciones": ["1 decilitro", "Son iguales", "1 litro", "Depende del líquido"],
+      "correcta": 2,
+      "explicacion": "¡Muy bien! 1 litro = 10 decilitros. ¡El litro es 10 veces mayor que el decilitro!",
+      "emoji": "📊"
+    },
+    {
+      "id": 23,
+      "tipo": "opcion_multiple",
+      "categoria": "capacidad",
+      "pregunta": "¿Cuántos litros tiene 1 kilolitro?",
+      "opciones": ["10 l", "100 l", "1.000 l", "10.000 l"],
+      "correcta": 2,
+      "explicacion": "¡Perfecto! 1 kilolitro = 1.000 litros. Los depósitos de agua de los edificios suelen medirse en kilolitros.",
+      "emoji": "🏗️"
+    },
+    {
+      "id": 24,
+      "tipo": "opcion_multiple",
+      "categoria": "capacidad",
+      "pregunta": "¿Qué medirías en mililitros?",
+      "opciones": ["El agua de un lago", "El agua de una piscina", "El agua de una botella grande", "Las gotas de un medicamento"],
+      "correcta": 3,
+      "explicacion": "¡Correcto! Los medicamentos líquidos se miden en mililitros porque son pequeñas cantidades. Un jarabe puede tener 5 ml por dosis.",
+      "emoji": "💊"
+    },
+    {
+      "id": 25,
+      "tipo": "opcion_multiple",
+      "categoria": "mixta",
+      "pregunta": "¿Cuál es la unidad principal de longitud en el Sistema Métrico?",
+      "opciones": ["El kilómetro", "El centímetro", "El metro", "El milímetro"],
+      "correcta": 2,
+      "explicacion": "¡Exacto! El metro (m) es la unidad principal de longitud. De él derivan todas las demás: kilómetro, centímetro, etc.",
+      "emoji": "🏆"
+    },
+    {
+      "id": 26,
+      "tipo": "opcion_multiple",
+      "categoria": "mixta",
+      "pregunta": "¿Cuál es la unidad principal de masa?",
+      "opciones": ["La tonelada", "El gramo", "El miligramo", "El kilogramo"],
+      "correcta": 3,
+      "explicacion": "¡Correcto! El kilogramo (kg) es la unidad principal de masa en el Sistema Internacional.",
+      "emoji": "⚖️"
+    },
+    {
+      "id": 27,
+      "tipo": "opcion_multiple",
+      "categoria": "mixta",
+      "pregunta": "¿Cuál es la unidad principal de capacidad?",
+      "opciones": ["El mililitro", "El centilitro", "El litro", "El kilolitro"],
+      "correcta": 2,
+      "explicacion": "¡Muy bien! El litro (l) es la unidad principal de capacidad. ¡Todos conocemos las botellas de 1 litro!",
+      "emoji": "🧴"
+    },
+    {
+      "id": 28,
+      "tipo": "opcion_multiple",
+      "categoria": "mixta",
+      "pregunta": "¿Qué letra usa el prefijo 'kilo' para indicar?",
+      "opciones": ["Dividir entre 10", "Multiplicar por 100", "Multiplicar por 1.000", "Dividir entre 1.000"],
+      "correcta": 2,
+      "explicacion": "¡Genial! 'Kilo' siempre significa 1.000. Kilómetro = 1.000 metros, Kilogramo = 1.000 gramos, Kilolitro = 1.000 litros.",
+      "emoji": "🔢"
+    },
+    {
+      "id": 29,
+      "tipo": "opcion_multiple",
+      "categoria": "mixta",
+      "pregunta": "¿Qué significa el prefijo 'mili'?",
+      "opciones": ["1.000 veces más", "La mitad", "1.000 veces menos (÷1.000)", "100 veces menos"],
+      "correcta": 2,
+      "explicacion": "¡Perfecto! 'Mili' siempre divide por 1.000. Milímetro = 1/1000 de metro. Miligramo = 1/1000 de gramo. Mililitro = 1/1000 de litro.",
+      "emoji": "🔬"
+    },
+    {
+      "id": 30,
+      "tipo": "opcion_multiple",
+      "categoria": "mixta",
+      "pregunta": "¿Para qué sirven las unidades de medida?",
+      "opciones": ["Solo para matemáticas", "Para medir y comparar magnitudes de forma universal", "Solo para la ciencia", "Para decorar los libros"],
+      "correcta": 1,
+      "explicacion": "¡Muy bien! Las unidades de medida nos permiten medir y comparar longitudes, pesos y capacidades de forma que todo el mundo entiende igual.",
+      "emoji": "🌍"
+    }
+  ]
+}

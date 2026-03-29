@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#6ab8d8" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <title>🎓 Aprendo las Unidades de Medida</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="manifest" href="manifest.json" />
+</head>
+<body>
+
+  <!-- Fondo animado con emojis flotantes -->
+  <div class="floating-emojis" id="floatingEmojis"></div>
+
+  <!-- Confeti -->
+  <div class="confetti-container" id="confettiContainer"></div>
+
+  <!-- ===== PANTALLA: CARGANDO ===== -->
+  <div class="screen active" id="screenLoading">
+    <div class="loading-card">
+      <div class="loading-emoji">📐</div>
+      <h1 class="loading-title">Cargando aventura…</h1>
+      <div class="loading-bar">
+        <div class="loading-fill"></div>
+      </div>
+      <p class="loading-sub">Preparando tus preguntas 🚀</p>
+    </div>
+  </div>
+
+  <!-- ===== PANTALLA: BIENVENIDA ===== -->
+  <div class="screen" id="screenWelcome">
+    <div class="welcome-card cardIn">
+      <div class="welcome-header">
+        <span class="welcome-icon">📏⚖️🧴</span>
+        <h1 class="welcome-title">Las Unidades<br />de Medida</h1>
+        <p class="welcome-sub">¡Pon a prueba lo que sabes!</p>
+      </div>
+
+      <div class="form-group">
+        <label class="form-label" for="playerName">¿Cómo te llamas? 👤</label>
+        <input
+          class="form-input"
+          type="text"
+          id="playerName"
+          placeholder="Escribe tu nombre…"
+          maxlength="20"
+          autocomplete="off"
+        />
+      </div>
+
+      <div class="form-group">
+        <label class="form-label">¿Cuántas preguntas? 🎮</label>
+        <div class="mode-buttons">
+          <button class="mode-btn" data-mode="5" data-label="Rápido">
+            <span class="mode-icon">⚡</span>
+            <span class="mode-name">Rápido</span>
+            <span class="mode-count">5 preguntas</span>
+          </button>
+          <button class="mode-btn selected" data-mode="10" data-label="Normal">
+            <span class="mode-icon">🎯</span>
+            <span class="mode-name">Normal</span>
+            <span class="mode-count">10 preguntas</span>
+          </button>
+          <button class="mode-btn" data-mode="20" data-label="Reto">
+            <span class="mode-icon">🏆</span>
+            <span class="mode-name">Reto</span>
+            <span class="mode-count">20 preguntas</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="welcome-actions">
+        <button class="btn btn-primary" id="btnStart">🚀 ¡Empezar!</button>
+        <button class="btn btn-secondary" id="btnReviewWelcome">📖 Repasar el tema</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== PANTALLA: JUEGO ===== -->
+  <div class="screen" id="screenGame">
+    <!-- Cabecera -->
+    <header class="game-header">
+      <div class="header-player">
+        <span class="header-avatar">🎮</span>
+        <span class="header-name" id="headerName">Jugador</span>
+      </div>
+      <div class="header-center">
+        <span class="header-info" id="headerQuestion">P 1/10</span>
+      </div>
+      <div class="header-right">
+        <span class="header-points" id="headerPoints">⭐ 0</span>
+        <button class="btn-review-small" id="btnReviewGame">📖 Repasar</button>
+      </div>
+    </header>
+
+    <!-- Barra de progreso -->
+    <div class="progress-bar-wrap">
+      <div class="progress-bar-fill" id="progressFill"></div>
+    </div>
+
+    <!-- Card de pregunta -->
+    <div class="game-area">
+      <div class="question-card cardIn" id="questionCard">
+        <div class="question-emoji" id="questionEmoji">❓</div>
+        <p class="question-text" id="questionText">¿Cuántos centímetros tiene 1 metro?</p>
+        <div class="options-grid" id="optionsGrid">
+          <!-- generado por JS -->
+        </div>
+        <button class="btn btn-confirm" id="btnConfirm" disabled>✅ Confirmar</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== OVERLAY: FEEDBACK ===== -->
+  <div class="overlay hidden" id="overlayFeedback">
+    <div class="feedback-card popIn">
+      <div class="feedback-emoji" id="feedbackEmoji">🎉</div>
+      <h2 class="feedback-title" id="feedbackTitle">¡Correcto!</h2>
+      <div class="feedback-badges" id="feedbackBadges"></div>
+      <p class="feedback-explanation" id="feedbackExplanation"></p>
+      <button class="btn btn-primary" id="btnNext">Siguiente ➡️</button>
+    </div>
+  </div>
+
+  <!-- ===== PANTALLA: RESULTADOS ===== -->
+  <div class="screen" id="screenResults">
+    <div class="results-card cardIn">
+      <div class="results-mascot" id="resultsMascot">🏆</div>
+      <h1 class="results-title" id="resultsTitle">¡Increíble!</h1>
+      <div class="results-score-wrap">
+        <div class="results-score" id="resultsScore">100</div>
+        <div class="results-score-label">puntos</div>
+      </div>
+      <div class="results-stars" id="resultsStars"></div>
+      <p class="results-detail" id="resultsDetail">10 de 10 correctas</p>
+      <div class="results-actions">
+        <button class="btn btn-primary" id="btnPlayAgain">🔄 Jugar otra vez</button>
+        <button class="btn btn-secondary" id="btnChangeMode">🏠 Cambiar modo</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== MODAL: REPASAR EL TEMA ===== -->
+  <div class="modal-overlay hidden" id="modalReview">
+    <div class="modal-card">
+      <button class="modal-close" id="btnCloseModal">✕</button>
+      <h2 class="modal-title">📖 Repasa el tema</h2>
+      <div class="modal-content" id="modalContent">
+        <!-- generado por JS -->
+      </div>
+      <button class="btn btn-primary" id="btnCloseModalBottom">✅ ¡Ya lo sé, a jugar!</button>
+    </div>
+  </div>
+
+  <!-- Pie de página: reporte de errores -->
+  <footer class="bug-footer">
+    <a
+      class="bug-link"
+      href="mailto:rafa.garcia.leon@gmail.com?subject=🐛%20Error%20en%20Aprendo%20las%20Unidades%20de%20Medida&body=Hola%20Rafa%2C%0A%0AHe%20encontrado%20un%20error%20en%20el%20juego%3A%0A%0A-%20Pantalla%3A%20%0A-%20Qu%C3%A9%20ocurri%C3%B3%3A%20%0A-%20Navegador%2Fdispositivo%3A%20%0A%0AGracias!"
+      title="Enviar reporte de error por correo"
+    >
+      🐛 ¿Encontraste un error? Repórtalo aquí
+    </a>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
