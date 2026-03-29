@@ -8,11 +8,48 @@
         "color": "#a8d8ea",
         "descripcion": "Medimos lo largo que es algo.",
         "unidades": [
-          { "nombre": "kilómetro", "simbolo": "km", "equivalencia": "1 km = 1.000 m", "ejemplo": "La distancia entre dos ciudades" },
-          { "nombre": "metro", "simbolo": "m", "equivalencia": "1 m = 100 cm", "ejemplo": "La altura de una puerta" },
-          { "nombre": "decímetro", "simbolo": "dm", "equivalencia": "1 dm = 10 cm", "ejemplo": "El ancho de tu mano" },
-          { "nombre": "centímetro", "simbolo": "cm", "equivalencia": "1 cm = 10 mm", "ejemplo": "El ancho de tu uña" },
-          { "nombre": "milímetro", "simbolo": "mm", "equivalencia": "el más pequeño", "ejemplo": "El grosor de una moneda" }
+          {
+            "nombre": "kilómetro",
+            "simbolo": "km",
+            "equivalencia": "1 km = 10 hm",
+            "ejemplo": "La distancia entre dos ciudades"
+          },
+          {
+            "nombre": "hectómetro",
+            "simbolo": "hm",
+            "equivalencia": "1 hm = 10 dam",
+            "ejemplo": "Un campo de fútbol largo"
+          },
+          {
+            "nombre": "decámetro",
+            "simbolo": "dam",
+            "equivalencia": "1 dam = 10 m",
+            "ejemplo": "Un edificio de 3 pisos"
+          },
+          {
+            "nombre": "metro",
+            "simbolo": "m",
+            "equivalencia": "1 m = 10 dm",
+            "ejemplo": "La altura de una puerta"
+          },
+          {
+            "nombre": "decímetro",
+            "simbolo": "dm",
+            "equivalencia": "1 dm = 10 cm",
+            "ejemplo": "El ancho de tu mano"
+          },
+          {
+            "nombre": "centímetro",
+            "simbolo": "cm",
+            "equivalencia": "1 cm = 10 mm",
+            "ejemplo": "El ancho de tu uña"
+          },
+          {
+            "nombre": "milímetro",
+            "simbolo": "mm",
+            "equivalencia": "1 mm = el menor",
+            "ejemplo": "El grosor de una moneda"
+          }
         ],
         "truco": "🧠 Truco: km → hm → dam → m → dm → cm → mm. ¡Cada paso divide o multiplica por 10!"
       },
@@ -22,12 +59,50 @@
         "color": "#ffd3b6",
         "descripcion": "Medimos lo que pesa algo.",
         "unidades": [
-          { "nombre": "tonelada", "simbolo": "t", "equivalencia": "1 t = 1.000 kg", "ejemplo": "Un elefante pesa unas 5 toneladas" },
-          { "nombre": "kilogramo", "simbolo": "kg", "equivalencia": "1 kg = 1.000 g", "ejemplo": "Un paquete de azúcar" },
-          { "nombre": "gramo", "simbolo": "g", "equivalencia": "1 g = 1.000 mg", "ejemplo": "Una moneda de 1 euro" },
-          { "nombre": "miligramo", "simbolo": "mg", "equivalencia": "el más pequeño", "ejemplo": "Un grano de sal" }
+          {
+            "nombre": "kilogramo",
+            "simbolo": "kg",
+            "equivalencia": "1 kg = 10 hg",
+            "ejemplo": "Un paquete de azúcar"
+          },
+          {
+            "nombre": "hectógramo",
+            "simbolo": "hg",
+            "equivalencia": "1 hg = 10 dag",
+            "ejemplo": "Una tableta de chocolate"
+          },
+          {
+            "nombre": "decágramo",
+            "simbolo": "dag",
+            "equivalencia": "1 dag = 10 g",
+            "ejemplo": "Una cucharada de café"
+          },
+          {
+            "nombre": "gramo",
+            "simbolo": "g",
+            "equivalencia": "1 g = 10 dg",
+            "ejemplo": "Un clip de papel"
+          },
+          {
+            "nombre": "decígramo",
+            "simbolo": "dg",
+            "equivalencia": "1 dg = 10 cg",
+            "ejemplo": "Un grano de arroz"
+          },
+          {
+            "nombre": "centígramo",
+            "simbolo": "cg",
+            "equivalencia": "1 cg = 10 mg",
+            "ejemplo": "Un grano de sal gruesa"
+          },
+          {
+            "nombre": "miligramo",
+            "simbolo": "mg",
+            "equivalencia": "1 mg = el menor",
+            "ejemplo": "Un grano de sal fina"
+          }
         ],
-        "truco": "🧠 Truco: t → kg → g → mg. ¡La tonelada es enorme, el miligramo es minúsculo!"
+        "truco": "🧠 Truco: kg → hg → dag → g → dg → cg → mg. ¡La unidad principal es el gramo!"
       },
       {
         "icono": "🧴",
@@ -36,12 +111,14 @@
         "descripcion": "Medimos cuánto líquido cabe en algo.",
         "unidades": [
           { "nombre": "kilolitro", "simbolo": "kl", "equivalencia": "1 kl = 1.000 l", "ejemplo": "Un depósito de agua grande" },
+          { "nombre": "hectolitro", "simbolo": "hl", "equivalencia": "1 hl = 100 l", "ejemplo": "Una cisterna escolar" },
+          { "nombre": "decalitro", "simbolo": "dal", "equivalencia": "1 dal = 10 l", "ejemplo": "Un barril pequeño" },
           { "nombre": "litro", "simbolo": "l", "equivalencia": "1 l = 10 dl", "ejemplo": "Una botella de agua" },
           { "nombre": "decilitro", "simbolo": "dl", "equivalencia": "1 dl = 10 cl", "ejemplo": "Un vaso pequeño" },
           { "nombre": "centilitro", "simbolo": "cl", "equivalencia": "1 cl = 10 ml", "ejemplo": "Una cucharada" },
           { "nombre": "mililitro", "simbolo": "ml", "equivalencia": "el más pequeño", "ejemplo": "Una gota grande" }
         ],
-        "truco": "🧠 Truco: kl → l → dl → cl → ml. ¡El litro es el rey de los líquidos!"
+        "truco": "🧠 Truco: kl → hl → dal → l → dl → cl → ml. ¡El litro es el rey de los líquidos!"
       }
     ]
   },
@@ -345,6 +422,26 @@
       "correcta": 1,
       "explicacion": "¡Muy bien! Las unidades de medida nos permiten medir y comparar longitudes, pesos y capacidades de forma que todo el mundo entiende igual.",
       "emoji": "🌍"
+    },
+    {
+      "id": 31,
+      "tipo": "opcion_multiple",
+      "categoria": "capacidad",
+      "pregunta": "¿Cuántos litros tiene 1 hectolitro?",
+      "opciones": ["10 l", "100 l", "1.000 l", "10.000 l"],
+      "correcta": 1,
+      "explicacion": "¡Exacto! 1 hectolitro = 100 litros. Las birras y el vino a veces se miden en hectolitros.",
+      "emoji": "🥂"
+    },
+    {
+      "id": 32,
+      "tipo": "opcion_multiple",
+      "categoria": "capacidad",
+      "pregunta": "¿Cuántos litros tiene 1 decalitre?",
+      "opciones": ["1 l", "10 l", "100 l", "0.1 l"],
+      "correcta": 1,
+      "explicacion": "¡Genial! 1 decalitre = 10 litros. Sirve para recipientes más grandes sin llegar al hectolitro.",
+      "emoji": "🛢️"
     }
   ]
 }
