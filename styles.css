@@ -213,20 +213,27 @@ body {
 .form-input:focus { border-color: #a0a0e0; box-shadow: 0 0 0 3px rgba(160,160,224,.2); }
 
 /* Mode buttons */
-.mode-buttons { display: flex; gap: 10px; }
+.mode-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(90px, 1fr));
+  gap: 10px;
+}
 .mode-btn {
-  flex: 1;
+  min-height: 96px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 3px;
-  padding: 14px 8px;
+  padding: 14px 10px;
   border: 2.5px solid #e0e0f0;
   border-radius: var(--radius-sm);
   background: var(--bg);
   cursor: pointer;
   transition: all .2s;
   font-family: var(--font-body);
+  text-align: center;
+  white-space: normal;
 }
 .mode-btn:hover { border-color: #b0b0e0; background: var(--white); }
 .mode-btn.selected {
@@ -719,7 +726,14 @@ body {
     border-radius: var(--radius-md);
   }
   .welcome-title  { font-size: 1.7rem; }
-  .mode-buttons   { flex-direction: column; }
+  .mode-buttons {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .mode-btn {
+    min-height: 84px;
+    font-size: .92rem;
+  }
   .options-grid   { grid-template-columns: 1fr; }
   .question-text  { font-size: 1.1rem; }
   .results-score  { font-size: 3rem; }
